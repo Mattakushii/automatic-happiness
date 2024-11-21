@@ -1,0 +1,10 @@
+{
+  "name": "automatic-happiness",
+  "version": "0.0.1",
+  "private": true,
+  "repository": "git@github.com:Mattakushii/automatic-happiness.git",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^8.1.9"
+  }
+}
