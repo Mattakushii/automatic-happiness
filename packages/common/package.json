@@ -1,11 +1,12 @@
 {
   "name": "common",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "files": [
     "package.json",
-    "lib"
+    "lib",
+    "build"
   ],
   "scripts": {
     "dev": "vite",
