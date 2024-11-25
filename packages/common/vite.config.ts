@@ -1,7 +1,7 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react'
-import path from 'path';
-import dts from 'vite-plugin-dts'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import path from "path";
+import dts from "vite-plugin-dts";
 
 export default defineConfig({
   build: {
@@ -9,7 +9,7 @@ export default defineConfig({
       entry: path.resolve(__dirname, "src/index.ts"),
       fileName: "index",
       formats: ["es"],
-      name: "common",
+      name: "common"
     },
     emptyOutDir: true,
     outDir: "./build",
@@ -20,12 +20,11 @@ export default defineConfig({
         // Global vars to use in UMD build for externalized deps
         globals: {
           react: "React",
-          "react-dom": "ReactDOM",
-        },
-      },
-    },
+          "react-dom": "ReactDOM"
+        }
+      }
+    }
   },
-  
-  plugins: [dts({insertTypesEntry: true}), react()],
-});
 
+  plugins: [dts({ insertTypesEntry: true }), react()]
+});
