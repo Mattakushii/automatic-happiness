@@ -1,1 +1,1 @@
-export const increment = (a: number, b: number) => a + b;
+export * from "./ui-kit";

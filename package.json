@@ -1,9 +1,14 @@
 {
   "name": "automatic-happiness",
   "version": "0.0.1",
-  "workspaces": [
-    "packages/*"
-  ],
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/common"
+    ]
+  },
   "private": true,
   "repository": "git@github.com:Mattakushii/automatic-happiness.git",
   "license": "MIT",

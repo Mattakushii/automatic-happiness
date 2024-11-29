@@ -18,7 +18,8 @@
     "paths": {
       "src": ["./src"],
       "Core": ["./src/Core"],
-      "Features": ["./src/Features"]
+      "Features": ["./src/Features"],
+      "@/*": ["./src/*"]
     }
   },
   "exclude": ["node_modules"]
